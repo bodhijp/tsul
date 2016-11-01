@@ -1,0 +1,376 @@
+/* your styles go here */
+
+.lazy {
+    min-height: 20px;
+}
+
+.box-image-text .image {
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.play-btn {
+    padding: 165px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.box-simple {
+    min-height: 230px;
+}
+
+.home-carousel .owl-carousel {
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+
+/*
+body {
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}*/
+
+
+/*body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(../img/10351449875904429.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+.top-banner {
+    background: url('../img/hd_banner2.jpg') no-repeat center;
+    min-height: 306px;
+}
+
+
+/*COPYIED FROM HUIDENGZHIGUANG*/
+
+.logo-image {
+    padding-top: 40px;
+}
+
+.logo-image a {
+    text-align: left;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.home-bg {
+    /*background-image: url(../img/bn_main.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+
+    position: fixed;
+    display: block;
+
+     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+   
+  
+    */
+    background: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+
+/*.img-shadow {
+    -webkit-filter: drop-shadow( 0 0 5px #437290);
+    filter: drop-shadow( 0 0 5px #437290);
+}*/
+
+.img-shadow {
+    -webkit-filter: drop-shadow( 0 0 7px #fff);
+    filter: drop-shadow( 0 0 7px #fff);
+}
+
+@media (max-width: 769px) and (min-width: 200px) {
+    .home1-bg {
+        /*background-image: url(../img/small-bg01.jpg);*/
+        background-image: url(../img/bg-white1.jpg);
+    }
+    .zmax1-sitename {
+        padding: 40px!important;
+    }
+}
+
+.home .zmax-sitename {
+    padding: 54px 0;
+}
+
+@media (min-width: 1920px) {
+    .home .zmax-sitename {
+        padding: 194px 0!important;
+    }
+}
+
+@media (min-width: 1820px) and (max-width: 1920px) {
+    .home .zmax-sitename {
+        padding: 194px 0!important;
+    }
+}
+
+@media (min-width: 1720px) and (max-width: 1820px) {
+    .home .zmax-sitename {
+        padding: 175px 0!important;
+    }
+}
+
+@media (min-width: 1620px) and (max-width: 1720px) {
+    .home .zmax-sitename {
+        padding: 128px 0!important;
+    }
+}
+
+@media (min-width: 1520px) and (max-width: 1620px) {
+    .home .zmax-sitename {
+        padding: 128px 0!important;
+    }
+}
+
+@media (min-width: 1420px) and (max-width: 1520px) {
+    .home .zmax-sitename {
+        padding: 128px 0!important;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1420px) {
+    .home .zmax-sitename {
+        padding: 128px 0!important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .home .zmax-sitename {
+        padding: 128px 0!important;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .home .zmax-sitename {
+        padding: 190px 0!important;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .home .zmax-sitename {
+        padding: 75px 0!important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .home .zmax-sitename {
+        padding: 75px 0!important;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    .home .zmax-sitename {
+        padding: 65px 0!important;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .home .zmax-sitename {
+        padding: 55px 0!important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    .home .zmax-sitename {
+        padding: 45px 0!important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .home .zmax-sitename {
+        padding: 35px 0!important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .home .zmax-sitename {
+        padding: 15px 0!important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 300px) {
+    .home .zmax-sitename {
+        padding: 4px 0!important;
+    }
+}
+
+#m2me {
+    cursor: pointer;
+    height: 28px!important;
+}
+
+.logo-img {
+    width: 360px;
+    height: 134px!important;
+}
+
+
+/*body {
+    padding-top: 80px;
+}*/
+
+a.fixed-br {
+    position: fixed;
+    bottom: 20px;
+    z-index: 100;
+    opacity: 0.4;
+}
+
+a.fixed-to-top {
+    right: 20px;
+}
+
+a.fixed-chgbg {
+    right: 70px;
+}
+
+a.fixed-chglogo {
+    right: 130px;
+}
+
+#toc {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 50px 10px 20px;
+    max-width: 20%;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    color: black;
+    filter: Alpha(Opacity=100);
+    /*IE7 fix*/
+    opacity: 1;
+}
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+}
+
+
+/*.navbar-inner {
+    background: transparent;
+}*/
+
+
+/*
+.intro-bg {
+    background: black;
+    padding-bottom: 60px;
+}
+
+.intro-bg-txt>h2,
+h5 {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #b40404;
+    font-weight: bold;
+    font-size: 120%;
+    margin-top: 11px;
+    margin-bottom: 0px;
+}
+*/
+
+.navbar {
+    margin: 0px;
+}
+
+.navbar-brand {
+    padding: 18px 12px;
+}
+
+.navbar-toggle {
+    margin-top: 16px;
+    border-radius: 4px;
+}
+
+.navbar-fixed-top {
+    border: 1px;
+    border-color: gray;
+}
+
+.navbar .navbar-buttons {
+    padding-right: 4px;
+}
+
+.btn-template-main {
+    /* color: white;*/
+    background-color: transparent;
+}
+
+.white-mask {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+    background: white;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+.home-carousel .owl-theme .owl-controls .owl-page.active span {
+    background: #467fbf;
+}
+
+.home-carousel h3,
+.home-carousel h1,
+.home-carousel h2,
+.home-carousel p,
+.home-carousel ul {
+    color: black;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 8px 1px;
+    font-size: 14px;
+}
+
+.table {
+    table-layout: auto;
+}
