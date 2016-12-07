@@ -175,8 +175,8 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.3400305165087!2d139.7255533156278!3d35.742446334219004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d7e646e82a5%3A0x6cac2c6aa6cc85fd!2z5aSn5q2j5aSn5a2m!5e0!3m2!1szh-CN!2sjp!4v1480307845739" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="gfrm" datasrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.3400305165087!2d139.7255533156278!3d35.742446334219004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d7e646e82a5%3A0x6cac2c6aa6cc85fd!2z5aSn5q2j5aSn5a2m!5e0!3m2!1szh-CN!2sjp!4v1480307845739" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -270,9 +270,8 @@
         function body_load() {
             console.log('Set body load');
 
-            $(".lazy").lazyload();
-
             set_bg("970.jpg");
+            $(".lazy").lazyload();
 
             set_div_bg('play-div', "pre1.jpg");
 
@@ -285,6 +284,11 @@
                     var lfhrefs = location.href.split('.');
                     window.location.href = 'mailto:info@' + lfhrefs[1] + '.org';
                 };
+
+            var gfrm =  document.getElementById('gfrm');
+            if (gfrm != null) {
+                gfrm.setAttribute("src",gfrm.getAttribute("datasrc"));
+            }
 
             var youtubeDiv = document.getElementById('play-a');
             if (youtubeDiv != null) {

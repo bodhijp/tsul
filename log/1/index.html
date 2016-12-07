@@ -230,9 +230,8 @@
         function body_load() {
             console.log('Set body load');
 
-            $(".lazy").lazyload();
-
             set_bg("970.jpg");
+            $(".lazy").lazyload();
 
             set_div_bg('play-div', "pre1.jpg");
 
@@ -245,6 +244,11 @@
                     var lfhrefs = location.href.split('.');
                     window.location.href = 'mailto:info@' + lfhrefs[1] + '.org';
                 };
+
+            var gfrm =  document.getElementById('gfrm');
+            if (gfrm != null) {
+                gfrm.setAttribute("src",gfrm.getAttribute("datasrc"));
+            }
 
             var youtubeDiv = document.getElementById('play-a');
             if (youtubeDiv != null) {

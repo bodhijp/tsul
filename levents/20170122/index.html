@@ -177,8 +177,8 @@
 
     <div class="row">
         <div class="col-md-12">
-            <div class="embed-responsive embed-responsive-4by3">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4622.5902589483085!2d135.75669113847988!3d34.99005703657774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x600108ae918b02ef%3A0xb61a446e74a21c08!2z5Lqs6YO9!3m2!1d34.985849!2d135.7587667!4m5!1s0x600108a38831c49b%3A0x8638dd575dcaa86!2z44CSNjAwLTg1MDUgS3nFjXRvLWZ1LCBLecWNdG8tc2hpLCBTaGltb2d5xY0ta3UsIFlhb3lhY2jFjSAoTXVyb21hY2hpZMWNcmkpLCDkuIvkuqzljLrng4_kuLjpgJrkuIPmnaHkuIrjgosg5p2x5pys6aGY5a-6IOOBl-OCk-OCieOCk-S6pOa1gemkqA!3m2!1d34.9934088!2d135.7584906!5e0!3m2!1szh-CN!2sjp!4v1480308724878" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="gfrm" datasrc="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4622.5902589483085!2d135.75669113847988!3d34.99005703657774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x600108ae918b02ef%3A0xb61a446e74a21c08!2z5Lqs6YO9!3m2!1d34.985849!2d135.7587667!4m5!1s0x600108a38831c49b%3A0x8638dd575dcaa86!2z44CSNjAwLTg1MDUgS3nFjXRvLWZ1LCBLecWNdG8tc2hpLCBTaGltb2d5xY0ta3UsIFlhb3lhY2jFjSAoTXVyb21hY2hpZMWNcmkpLCDkuIvkuqzljLrng4_kuLjpgJrkuIPmnaHkuIrjgosg5p2x5pys6aGY5a-6IOOBl-OCk-OCieOCk-S6pOa1gemkqA!3m2!1d34.9934088!2d135.7584906!5e0!3m2!1szh-CN!2sjp!4v1480308724878" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -272,9 +272,8 @@
         function body_load() {
             console.log('Set body load');
 
-            $(".lazy").lazyload();
-
             set_bg("970.jpg");
+            $(".lazy").lazyload();
 
             set_div_bg('play-div', "pre1.jpg");
 
@@ -287,6 +286,11 @@
                     var lfhrefs = location.href.split('.');
                     window.location.href = 'mailto:info@' + lfhrefs[1] + '.org';
                 };
+
+            var gfrm =  document.getElementById('gfrm');
+            if (gfrm != null) {
+                gfrm.setAttribute("src",gfrm.getAttribute("datasrc"));
+            }
 
             var youtubeDiv = document.getElementById('play-a');
             if (youtubeDiv != null) {
