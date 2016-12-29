@@ -40,9 +40,6 @@
                 $.ajax({
                     type: 'POST',
                     url: URL,
-                
-                    dataType: 'json',
-                    contentType: 'application/json',
                     data: JSON.stringify(data),
                     success: function () {
                     // clear form and show a success message
