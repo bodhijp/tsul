@@ -36,19 +36,23 @@
                     email: $('#email-input').val(),
                     description: $('#description-input').val()
                 }
+                var sdbtn = $('#send-btn');
                 
                 $.ajax({
                     type: 'POST',
                     url: URL,
                     data: JSON.stringify(data),
                     success: function () {
+                        sdbtn.html('お問い合わせを送信しました ');
                     // clear form and show a success message
                     },
                     error: function () {
-                    // show an error message
+                        sdbtn.html('送信失敗しました ');
                     }
-                })
-                })
+                });
+                sdbtn.attr('disabled',true);
+                sdbtn.html('送信中');
+            });
 
         }
 
