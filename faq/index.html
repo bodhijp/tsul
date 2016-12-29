@@ -9,7 +9,7 @@
     <title>お問い合わせ</title>
 
     <meta name="author" content="" />
-    <meta name="keywords" content="">  <meta name="generator" content="Hugo 0.16" />
+    <meta name="keywords" content="">  <meta name="generator" content="Hugo 0.18" />
 
     
     <link href="https://tsul.bodhijp.org/css/app.css?v8" rel="stylesheet">
@@ -31,7 +31,7 @@
     
     <meta property="og:title" content="お問い合わせ" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/faq//" />
     <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -129,25 +129,49 @@
 
         <div class="col-md-12">
             <div>
-                
-
-<h1 id="お問い合わせ連絡先">お問い合わせ連絡先</h1>
-
-<p><h3>
+                <div class="col-md-6">
+<h2> お問い合わせ連絡先  </h2>
+<h2>
 Mail:
 <a id='m2me' >
 info<i class="fa fa-at fa-align-justify"></i>bodhijp.org
 </a>
-</h3><br />
-<mimg class="llazy img-responsive" data-original="../img/m.svg"></p>
+</h2>   
+<mimg class="llazy img-responsive" data-original="../img/m.svg">
 
-<p><h3>
+<h2>
 <i class="fa fa-wechat fa-align-justify"><a href='https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5NTUwMjIzNQ==&scene=110#wechat_redirect'>Wechat: </i>ribenputixuehui </a>
-</h3>
-    日本語と中国語可</p>
+</h2>
+日本語と中国語可                        
 
-<pre><code>ご意見、ご質問、メッセージ等々お気軽にお問い合わせください。                              
-</code></pre>
+ご意見、ご質問、メッセージ等々お気軽にお問い合わせください。      
+</div>
+
+<div class="col-md-6 vertical-center">
+<form id="contact-form">
+<div class="form-group row">
+  <label for="example-text-input" class="col-xs-2 col-form-label">お名前</label>
+  <div class="col-xs-10">
+    <input required="true" class="form-control" type="text" id="name-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-search-input" class="col-xs-2 col-form-label">Eメール/電話番号</label>
+  <div class="col-xs-10">
+    <input required="true" class="form-control" type="search" id="email-input">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="example-email-input" class="col-xs-2 col-form-label">問い合わせ内容</label>
+  <div class="col-xs-10">
+   <textarea required="true" class="form-control" id="description-input"></textarea>
+  </div>
+</div>
+
+<p><button type="submit" class="btn btn-default">送信</button>
+</form></p>
+
+<p></div></p>
 
             </div>
         </div>
@@ -213,79 +237,7 @@ info<i class="fa fa-at fa-align-justify"></i>bodhijp.org
 
 
 <script src="https://tsul.bodhijp.org/js/app.js?v=8"></script>
-
-
-<script asyc>
-    (function() {
-
-        function set_div_cn(id, cn) {
-            document.getElementById(id).className = cn;
-        }
-
-        function set_div_bg(id, bg) {
-            set_el_bg(document.getElementById(id), bg);
-        }
-
-        function set_el_bg(el, bg) {
-            if (el != null) el.style.backgroundImage = "url(https://bgcdn.bodhijp.org/" + bg + ")";
-        }
-
-        function set_bg(bg) {
-            set_div_bg('homg-div', bg); 
-            
-        }
-
-        function loadCSS(e, t, n) {
-            "use strict";
-            var i = window.document.createElement("link");
-            var o = t || document.head;
-            i.rel = "stylesheet";
-            i.href = e;
-            o.parentNode.insertBefore(i, o);
-        }
-
-        function body_load() {
-            console.log('Set body load');
-
-            set_bg("970.jpg");
-           
-
-            set_div_bg('play-div', "pre1.jpg");
-
-            
-            loadCSS("https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css");
-
-            var ma = document.getElementById('m2me');
-            if (ma != null)
-                ma.onclick = function() {
-                    var lfhrefs = location.href.split('.');
-                    window.location.href = 'mailto:info@' + lfhrefs[1] + '.org';
-                };
-
-            var gfrm =  document.getElementById('gfrm');
-            if (gfrm != null) {
-                gfrm.setAttribute("src",gfrm.getAttribute("datasrc"));
-            }
-
-            var youtubeDiv = document.getElementById('play-a');
-            if (youtubeDiv != null) {
-                youtubeDiv.onclick = function() {
-                    console.log('Clk play');
-                    $("#p-video").attr("src", $("#p-video").attr("dsrc"));
-                    set_div_cn('iframe-div', 'embed-responsive embed-responsive-16by9');
-                    set_div_cn('play-div', 'hide');
-                }
-            }
-
-            
-            
-            $(".lazy").lazyload();
-        }
-
-        document.body.addEventListener("load", body_load(), false);
-
-    })();
-</script>
+<script asyc src = "https://tsul.bodhijp.org/js/custom.js?v=8"></script>
 
 </body>
 

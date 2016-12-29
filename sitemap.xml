@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://tsul.bodhijp.org/</loc>
-    <lastmod>2016-10-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://tsul.bodhijp.org/levents/20170116/</loc>
     <lastmod>2016-10-11T00:00:00+00:00</lastmod>
   </url>
@@ -73,7 +68,35 @@
   </url>
   
   <url>
+    <loc>https://tsul.bodhijp.org/levents/</loc>
+    <lastmod>2016-10-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsul.bodhijp.org/log/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsul.bodhijp.org/oevents/</loc>
+    <lastmod>2016-10-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tsul.bodhijp.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://tsul.bodhijp.org/faq/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tsul.bodhijp.org/</loc>
+    <lastmod>2016-10-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -81,7 +104,19 @@
   </url>
   
   <url>
+    <loc>https://tsul.bodhijp.org/tags/%E7%95%A5%E6%AD%B4/</loc>
+    <lastmod>2016-10-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://tsul.bodhijp.org/video/</loc>
+  </url>
+  
+  <url>
+    <loc>https://tsul.bodhijp.org/tags/%E8%AE%B2%E5%BA%A7/</loc>
+    <lastmod>2016-10-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

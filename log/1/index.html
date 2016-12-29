@@ -9,7 +9,7 @@
     <title></title>
 
     <meta name="author" content="" />
-    <meta name="keywords" content="">  <meta name="generator" content="Hugo 0.16" />
+    <meta name="keywords" content="">  <meta name="generator" content="Hugo 0.18" />
 
     
     <link href="https://tsul.bodhijp.org/css/app.css?v8" rel="stylesheet">
@@ -31,7 +31,7 @@
     
     <meta property="og:title" content="" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="/" />
+    <meta property="og:url" content="/log/1//" />
     <meta property="og:image" content="img/logo.png" />
 
 </head>
@@ -204,79 +204,7 @@
 
 
 <script src="https://tsul.bodhijp.org/js/app.js?v=8"></script>
-
-
-<script asyc>
-    (function() {
-
-        function set_div_cn(id, cn) {
-            document.getElementById(id).className = cn;
-        }
-
-        function set_div_bg(id, bg) {
-            set_el_bg(document.getElementById(id), bg);
-        }
-
-        function set_el_bg(el, bg) {
-            if (el != null) el.style.backgroundImage = "url(https://bgcdn.bodhijp.org/" + bg + ")";
-        }
-
-        function set_bg(bg) {
-            set_div_bg('homg-div', bg); 
-            
-        }
-
-        function loadCSS(e, t, n) {
-            "use strict";
-            var i = window.document.createElement("link");
-            var o = t || document.head;
-            i.rel = "stylesheet";
-            i.href = e;
-            o.parentNode.insertBefore(i, o);
-        }
-
-        function body_load() {
-            console.log('Set body load');
-
-            set_bg("970.jpg");
-           
-
-            set_div_bg('play-div', "pre1.jpg");
-
-            
-            loadCSS("https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css");
-
-            var ma = document.getElementById('m2me');
-            if (ma != null)
-                ma.onclick = function() {
-                    var lfhrefs = location.href.split('.');
-                    window.location.href = 'mailto:info@' + lfhrefs[1] + '.org';
-                };
-
-            var gfrm =  document.getElementById('gfrm');
-            if (gfrm != null) {
-                gfrm.setAttribute("src",gfrm.getAttribute("datasrc"));
-            }
-
-            var youtubeDiv = document.getElementById('play-a');
-            if (youtubeDiv != null) {
-                youtubeDiv.onclick = function() {
-                    console.log('Clk play');
-                    $("#p-video").attr("src", $("#p-video").attr("dsrc"));
-                    set_div_cn('iframe-div', 'embed-responsive embed-responsive-16by9');
-                    set_div_cn('play-div', 'hide');
-                }
-            }
-
-            
-            
-            $(".lazy").lazyload();
-        }
-
-        document.body.addEventListener("load", body_load(), false);
-
-    })();
-</script>
+<script asyc src = "https://tsul.bodhijp.org/js/custom.js?v=8"></script>
 
 </body>
 
